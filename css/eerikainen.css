@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Work+Sans:wght@400;500;700&display=swap');
+
+main {
+  background-color: #264a5a;
+  color: #264a5a;
+  font-family: 'Work Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Prata', serif;
+  font-size: 3em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+  font-family: 'Prata', serif;
+  font-weight: 700;
+  font-size: 2.3em;
+}
+
+.bmi h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+h6 {
+  font-weight: 700;
+}
+
+figcaption {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.7em;
+}
+
+/* Navigation */
+
+.bg-light {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.bg-dark {
+  background-color: #264a5a !important;
+}
+
+.nav-link,
+.dropdown-item {
+  color: #264a5a !important;
+  font-size: 1.2em;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  background-color: #264a5a;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(38, 74, 90, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler {
+  border-color: #264a5a !important;
+  border: 2px solid transparent;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+footer {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Quiz */
+
+.not_visible {
+  display: none;
+}
+
+.selected {
+  background-color: rgba(110, 253, 153, 0.3);
+  font-weight: 700;
+}
+
+.wrong {
+  background-color: rgba(253, 110, 110, 0.3);
+  font-style: italic;
+}
+
+.right {
+  font-weight: 700;
+}
+
+/* Media querys */
+
+@media screen and (min-width: 320px) {
+  main {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    position: relative;
+    min-height: calc(100vh - 260px);
+  }
+
+  /* .parent {
+    position: relative;
+    height: 520px;
+  }
+  
+  .child {
+    position: absolute;
+    padding: 1.5rem;
+    left: 0;
+    bottom: 0;
+  } */
+
+}
