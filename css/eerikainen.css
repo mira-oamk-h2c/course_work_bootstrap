@@ -101,13 +101,12 @@ footer {
 }
 
 .selected {
-  background-color: rgba(110, 253, 153, 0.3);
+  background-color: rgba(110, 253, 153, 0.6);
   font-weight: 700;
 }
 
 .wrong {
-  background-color: rgba(253, 110, 110, 0.3);
-  font-style: italic;
+  background-color: rgba(253, 110, 110, 0.6);
 }
 
 .right {
