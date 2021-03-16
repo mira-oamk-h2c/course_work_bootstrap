@@ -6,7 +6,7 @@
 body {
   background-color: #264a5a;
   color: #264a5a;
-  font-size: 120%;
+  font-size: 125%;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -26,20 +26,22 @@ a:hover {
 
 h1 {
   font-family: 'Prata', serif;
-  font-size: 2.7em;
+  font-size: 2.5em;
   color: rgba(255, 255, 255, 0.8);
 }
 
 h2 {
   font-family: 'Prata', serif;
   font-weight: 700;
-  font-size: 2.2em;
+  font-size: 2em;
 }
 
 h3 {
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
+
+
 
 h6 {
   font-weight: 700;
