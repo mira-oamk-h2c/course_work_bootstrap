@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&family=Work+Sans:wght@400;500;700&display=swap');
 
-main {
+
+/* Main CSS */
+
+body {
   background-color: #264a5a;
   color: #264a5a;
   font-family: 'Work Sans', sans-serif;
@@ -14,6 +17,10 @@ a {
 a:hover {
   color: inherit;
   font-weight: 700;
+}
+
+.fa-external-link {
+  color: rgba(38, 74, 90, 0.5);
 }
 
 h1 {
@@ -46,6 +53,29 @@ figcaption {
   font-size: 0.7em;
 }
 
+
+/* Buttons */
+
+.btn {
+  border: none;
+}
+
+.btn-dark {
+  background-color: #264a5a;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-dark:hover {
+  background-color: rgba(38, 74, 90, 0.5);
+}
+
+.btn-dark:focus {
+  background-color: #264a5a;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+
 /* Navigation */
 
 .bg-light {
@@ -58,7 +88,7 @@ figcaption {
 
 .nav-link,
 .dropdown-item {
-  color: #264a5a !important;
+  color: inherit !important;
   font-size: 1.2em;
 }
 
@@ -66,9 +96,14 @@ figcaption {
   font-weight: 700;
 }
 
+.nav-link.active:hover {
+  font-weight: 700;
+}
+
 .nav-link:hover {
   background-color: #264a5a;
   color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 400;
 }
 
 .navbar-toggler-icon {
@@ -96,17 +131,21 @@ footer {
 
 /* Quiz */
 
+.form-check {
+  width: max-content;
+}
+
 .not_visible {
   display: none;
 }
 
 .selected {
-  background-color: rgba(110, 253, 153, 0.6);
+  background-color: rgba(53, 199, 60, 0.9);
   font-weight: 700;
 }
 
 .wrong {
-  background-color: rgba(253, 110, 110, 0.6);
+  background-color: rgba(221, 74, 74, 0.9);
 }
 
 .right {
