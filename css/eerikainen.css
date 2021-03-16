@@ -6,6 +6,7 @@
 body {
   background-color: #264a5a;
   color: #264a5a;
+  font-size: 120%;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -25,18 +26,14 @@ a:hover {
 
 h1 {
   font-family: 'Prata', serif;
-  font-size: 3em;
+  font-size: 2.7em;
   color: rgba(255, 255, 255, 0.8);
 }
 
 h2 {
   font-family: 'Prata', serif;
   font-weight: 700;
-  font-size: 2.3em;
-}
-
-.bmi h2 {
-  font-size: 1.7em;
+  font-size: 2.2em;
 }
 
 h3 {
@@ -165,6 +162,7 @@ footer {
     position: relative;
     min-height: calc(100vh - 260px);
   }
+
 
   /* .parent {
     position: relative;
