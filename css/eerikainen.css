@@ -6,7 +6,6 @@
 body {
   background-color: #264a5a;
   color: #264a5a;
-  font-size: 125%;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -33,12 +32,12 @@ h1 {
 h2 {
   font-family: 'Prata', serif;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 h3 {
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 
