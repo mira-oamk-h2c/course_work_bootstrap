@@ -155,16 +155,28 @@ footer {
 /* Media querys */
 
 @media screen and (min-width: 320px) {
+
+  body {
+    font-size: 1.15em;
+  }
+
   main {
     overflow: hidden;
   }
+
 }
 
 @media screen and (min-width: 768px) {
+
+  body {
+    font-size: 1em;
+  }
+
   section {
     position: relative;
     min-height: calc(100vh - 248px);
   }
+
 
 
   /* .parent {
