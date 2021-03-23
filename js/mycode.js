@@ -91,7 +91,6 @@ $(document).ready(function () {
       );
       message.show();
       return;
-      
     } 
     
     if (age < 20 || age > 60) {
@@ -163,8 +162,21 @@ $(document).ready(function () {
     // Read input data
     let value = Number($("#waist").val());
     let gender = Number($("[name=flexRadioDefault]:checked").val());
+
+    // Validate input data and bring out notification modal if not filled
+
+    if (value === 0) {
+      $("#m_title").html("Oops, it seems you missed something!");
+      $("#m_body").html("<p>" + "You need to fill the field:" + "</p>" + 
+      "<p>" + "Waist" + "</p>");
+      let message = new bootstrap.Modal(document.getElementById("mymessage"),
+        { backdrop: "static" }
+      );
+      message.show();
+      return;
+    }
     
-    // Handle data based on gender selection
+    // Handle correct data based on gender selection
     if (gender === 1) {
       if (value < 90) {
         $("#lg-item_1").addClass("bg-info");
