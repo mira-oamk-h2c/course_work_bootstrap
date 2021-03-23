@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&family=Work+Sans:wght@400;500;700&display=swap');
 
-
 /* Main CSS */
 
 body {
@@ -53,7 +52,6 @@ figcaption {
   font-size: 0.7em;
 }
 
-
 /* Buttons */
 
 .btn {
@@ -73,8 +71,6 @@ figcaption {
   background-color: #264a5a;
   color: rgba(255, 255, 255, 0.8);
 }
-
-
 
 /* Navigation */
 
@@ -123,7 +119,6 @@ section {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-
 footer {
   background-color: rgba(255, 255, 255, 0.25);
   color: rgba(255, 255, 255, 0.65);
@@ -152,10 +147,21 @@ footer {
   font-weight: 700;
 }
 
+
+/* BMI */
+
+::placeholder {
+  font-size: 0.85em;
+}
+
+.form-check-label {
+  display: block;
+  max-width: 212px;
+}
+
 /* Media querys */
 
 @media screen and (min-width: 320px) {
-
   body {
     font-size: 1.15em;
   }
@@ -163,11 +169,9 @@ footer {
   main {
     overflow: hidden;
   }
-
 }
 
 @media screen and (min-width: 768px) {
-
   body {
     font-size: 1em;
   }
@@ -176,19 +180,5 @@ footer {
     position: relative;
     min-height: calc(100vh - 248px);
   }
-
-
-
-  /* .parent {
-    position: relative;
-    height: 520px;
-  }
-  
-  .child {
-    position: absolute;
-    padding: 1.5rem;
-    left: 0;
-    bottom: 0;
-  } */
 
 }

@@ -27,7 +27,7 @@
       <!-- Navigation starts here -->
       <nav class="navbar shadow-sm navbar-expand-md navbar-light bg-light">
         <div class="container-fluid 
-       text-center ps-md-2">
+        text-center ps-md-2">
           <button class="navbar-toggler ms-auto me-auto" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -69,64 +69,78 @@
           <h2 class="mb-4">BMI <span class="h5">(Body&nbspMass&nbspIndex)</span></h2>
 
           <div class="mb-3">
-            <label for="birth_year" class="form-label">Birth year <i class="fa fa-question-circle" aria-hidden="true"></i>
-            </label>
-            <input type="email" class="form-control" id="birth_year" placeholder="Four digits">
+            <label for="birth_year" class="form-label">Birth year</label>
+            <a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Why do we ask this?"
+              data-bs-content="BMI results are for people from age 20 to 60." data-bs-trigger="focus" tabindex="0"><i
+                class="fa fa-question-circle" aria-hidden="true"></i></a>
+            <input type="number" class="bmi form-control" id="birth_year" placeholder="Four digits">
           </div>
 
           <div class="mb-3">
-            <label for="weight" class="form-label">Weight (kg) <i class="fa fa-question-circle" aria-hidden="true"></i>
-            </label>
-            <input type="email" class="form-control" id="weight" placeholder="Full kilos, no decimals">
+            <label for="weight" class="form-label">Weight (kg)</label>
+            <a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="No cheating! We don't judge."
+              data-bs-content="The results are helpful only if you are honest." data-bs-trigger="focus" tabindex="0"><i
+                class="fa fa-question-circle" aria-hidden="true"></i></a>
+            <input type="number" class="bmi form-control" id="weight" placeholder="Full kilos, no decimals">
           </div>
 
           <div class="mb-3">
-            <label for="height" class="form-label">Height (cm) <i class="fa fa-question-circle" aria-hidden="true"></i>
-            </label>
-            <input type="email" class="form-control" id="height" placeholder="Centimeters, no decimals">
+            <label for="height" class="form-label">Height (cm)</label>
+            <a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Measure without shoes."
+              data-bs-content="Also, take off your hat." data-bs-trigger="focus" tabindex="0"><i class="fa fa-question-circle"
+                aria-hidden="true"></i></a>
+            <input type="number" class="bmi form-control" id="height" placeholder="Centimeters, no decimals">
           </div>
 
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="weight_range">
-            <label class="form-check-label col-8 col-sm-6" for="weight_range">
-              Show also my normal weight range <i class="fa fa-question-circle" aria-hidden="true"></i>
-            </label>
+            <label class="form-check-label" for="weight_range">
+              Show also my normal weight&nbsprange</label>
+            <a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="The recommended weight based on how tall you are." 
+              data-bs-content="Remember, muscles weigh too." data-bs-trigger="focus" 
+              tabindex="0"><i class="fa fa-question-circle" aria-hidden="true"></i>
+            </a>
           </div>
 
           <div class="d-grid justify-content-end mt-4">
-            <button type="button" class="btn btn-dark shadow-none"><i class="fa fa-calculator fa-sm pe-2" aria-hidden="true"></i>BMI</button>
+            <button type="button" class="btn btn-dark shadow-none" id="calculate_bmi"><i
+                class="fa fa-calculator fa-sm pe-2" aria-hidden="true"></i>BMI</button>
           </div>
+
 
         </div>
 
         <div class="col-sm-6 col-lg-3 p-4 pt-5 pb-0 pb-md-4 text-start">
           <h3 class="mb-4">Results</h3>
-          <p>Your BMI: <span id="bmi"></span></p>
+          <p>Your BMI: <span id="result_bmi"></span></p>
           <p>Normal weight: <span id="normal"></span></p>
-          <p>Please do not use the BMI directly to measure fatness or slimness. The body mass index may have increased, for example, physique, due to muscularity or other factors.</p>
+          <p>Please do not use the BMI directly to measure fatness or slimness. The body mass index may have increased,
+            for example, physique, due to muscularity or other factors.</p>
 
           <div class="mt-4 mb-4">
-            <button type="button" class="btn btn-dark shadow-none" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-info-circle pe-2" aria-hidden="true"></i></i></i>BMI explanation</button>
+            <button type="button" class="btn btn-dark shadow-none" data-bs-toggle="collapse"
+              data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i
+                class="fa fa-info-circle pe-2" aria-hidden="true"></i></i></i>BMI explanation</button>
           </div>
 
           <div class="collapse" id="collapseExample">
             <div class="card card-body" id="bmi_expl_1">
-              Severly underweight (BMI < 17)
+              Severly underweight (BMI < 17) 
             </div>
             <div class="card card-body" id="bmi_expl_2">
-              Underweight (BMI = 17 - < 18.5)
+              Underweight (BMI = 17 - < 18.5) 
             </div>
             <div class="card card-body" id="bmi_expl_3">
-              Normal weight (BMI = 18.5 - < 25)
+              Normal weight (BMI = 18.5 - < 25) 
             </div>
             <div class="card card-body" id="bmi_expl_4">
-              Overweight (BMI = 25 - < 30)
+              Overweight (BMI = 25 - < 30) 
             </div>
             <div class="card card-body" id="bmi_expl_5">
-              Moderately obese (BMI = 30 - < 35)
+              Moderately obese (BMI = 30 - < 35) 
             </div>
             <div class="card card-body" id="bmi_expl_6">
-              Severely obese (BMI = 35 - < 40)
+              Severely obese (BMI = 35 - < 40) 
             </div>
             <div class="card card-body" id="bmi_expl_7">
               Very severely obese (BMI >= 40)
@@ -137,42 +151,48 @@
 
         <div class="col-sm-6 col-lg-3 p-4 pt-5 pb-0 pb-md-4 text-start">
           <h2 class="mb-4">Waist control</h2>
+
           <div class="mb-3">
-            <label for="waist" class="form-label">Waist (cm) <i class="fa fa-question-circle" aria-hidden="true"></i>
-            </label>
-            <input type="email" class="form-control" id="waist" placeholder="Centimeters, no decimals">
+            <label for="waist" class="form-label">Waist (cm)</label>
+            <a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Waist diameter"
+              data-bs-content="Measure your waist above hips." data-bs-trigger="focus" tabindex="0"><i
+                class="fa fa-question-circle" aria-hidden="true"></i></a>
+            <input type="number" class="form-control" id="waist" placeholder="Centimeters, no decimals">
           </div>
 
           <div class="form-check-inline">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked
+              value="2">
             <label class="form-check-label" for="flexRadioDefault1">
               Male
             </label>
           </div>
           <div class="form-check-inline">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="2">
             <label class="form-check-label" for="flexRadioDefault2">
               Female
             </label>
           </div>
-          
+
           <div class="mt-4">
-            <button type="button" class="btn btn-dark shadow-none"><i class="fa fa-eye pe-2" aria-hidden="true"></i>Waist</button>
+            <button type="button" class="btn btn-dark shadow-none" id="calculate_waist"><i class="fa fa-eye pe-2"
+                aria-hidden="true"></i>Waist</button>
           </div>
         </div>
 
         <div class="col-sm-6 col-lg-3 p-4 pt-5 text-start">
           <h3 class="mb-4">Results</h3>
-          <p>Your waist measurement is an indicator of the level of internal fat deposits which coat the heart, kidneys, liver, digestive organs and pancreas. This can increase the risk of heart disease and stroke.</p>
-          
+          <p>Your waist measurement is an indicator of the level of internal fat deposits which coat
+            the heart, kidneys, liver, digestive organs and pancreas. This can increase the risk of
+            heart disease and stroke.</p>
           <ul class="list-group">
             <li class="list-group-item" id="lg-item_1">No health risk</li>
             <li class="list-group-item" id="lg-item_2">Slight health risk</li>
             <li class="list-group-item" id="lg-item_3">Great health risk</li>
           </ul>
-
         </div>
       </div>
+
     </section>
     <!-- Section ends here -->
 
@@ -189,13 +209,29 @@
 
   </main>
 
+  <!-- Modals -->
+  <div class="modal" tabindex="-1" id="mymessage">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="m_title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="m_body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    
+  
   <script src="js/mycode.js"></script>
 
 </body>
