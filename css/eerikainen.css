@@ -6,6 +6,8 @@ body {
   background-color: #264a5a;
   color: #264a5a;
   font-family: 'Work Sans', sans-serif;
+  overflow: auto;  
+
 }
 
 a {
@@ -165,9 +167,9 @@ footer {
   font-size: 0.85em;
 }
 
-.card-body {
+/* .card-body {
   font-size: 0.85em;
-}
+} */
 
 /* Media querys */
 
@@ -176,9 +178,10 @@ footer {
     font-size: 1.15em;
   }
 
-  main {
+  #bmi, #images, #home, #quiz, #tourists {
     overflow: hidden;
   }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -186,7 +189,7 @@ footer {
     font-size: 1em;
   }
 
-  section {
+  .bmi-container, .images-container, .home-container, .quiz-container, .tourists-container {
     position: relative;
     min-height: calc(100vh - 248px);
   }

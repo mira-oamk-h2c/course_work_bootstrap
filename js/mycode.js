@@ -149,7 +149,7 @@ $(document).ready(function () {
   });
 
   // Select and empty all output elements with click on input element
-  $(".bmi.form-control").focusin(function () {
+  $(".bmi-form.form-control").focusin(function () {
     $(this).select();
     $("#result_bmi").html("");
     $("#normal").html("");
