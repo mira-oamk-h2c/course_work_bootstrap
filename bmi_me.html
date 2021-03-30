@@ -38,19 +38,19 @@
                 <a class="nav-link pe-md-3 ps-md-3" href="index.html">My city</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pe-md-3 ps-md-3" href="touristsME.html">Tourists</a>
+                <a class="nav-link pe-md-3 ps-md-3" href="tourists_me.html">Tourists</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pe-md-3 ps-md-3" href="imagesME.html">Images</a>
+                <a class="nav-link pe-md-3 ps-md-3" href="images_me.html">Images</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pe-md-3 ps-md-3" href="parallaxME.html">Parallax</a>
+                <a class="nav-link pe-md-3 ps-md-3" href="parallax_me.html">Parallax</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pe-md-3 ps-md-3" href="quizME.html">Quiz</a>
+                <a class="nav-link pe-md-3 ps-md-3" href="quiz_me.html">Quiz</a>
               </li>
               <li class="nav-item mb-md-0">
-                <a class="nav-link pe-md-3 ps-md-3 active" aria-current="page" href="bmiME.html">BMI</a>
+                <a class="nav-link pe-md-3 ps-md-3 active" aria-current="page" href="bmi_me.html">BMI</a>
               </li>
             </ul>
           </div>
@@ -65,7 +65,7 @@
     <section class="bmi container-fluid">
       <div class="row">
 
-        <div class="col-sm-6 col-lg-3 p-4 pt-5 pb-0 pb-md-4 text-start">
+        <div class="col-sm-6 col-md-3 p-4 pt-5 pb-0 pb-md-4 text-start">
           <h2 class="mb-4">BMI <span class="h5">(Body&nbspMass&nbspIndex)</span></h2>
 
           <div class="mb-3">
@@ -78,17 +78,17 @@
 
           <div class="mb-3">
             <label for="weight" class="form-label">Weight (kg)</label>
-            <a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="No cheating! We don't judge."
-              data-bs-content="The results are helpful only if you are honest." data-bs-trigger="focus" tabindex="0"><i
-                class="fa fa-question-circle" aria-hidden="true"></i></a>
+            <a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+              title="No cheating! We don't judge." data-bs-content="The results are helpful only if you are honest."
+              data-bs-trigger="focus" tabindex="0"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
             <input type="number" class="bmi form-control" id="weight" placeholder="Full kilos, no decimals">
           </div>
 
           <div class="mb-3">
             <label for="height" class="form-label">Height (cm)</label>
-            <a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Measure without shoes."
-              data-bs-content="Also, take off your hat." data-bs-trigger="focus" tabindex="0"><i class="fa fa-question-circle"
-                aria-hidden="true"></i></a>
+            <a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+              title="Measure without shoes." data-bs-content="Also, take off your hat." data-bs-trigger="focus"
+              tabindex="0"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
             <input type="number" class="bmi form-control" id="height" placeholder="Centimeters, no decimals">
           </div>
 
@@ -96,9 +96,9 @@
             <input class="form-check-input" type="checkbox" value="" id="weight_range">
             <label class="form-check-label" for="weight_range">
               Show also my normal weight&nbsprange</label>
-            <a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="The recommended weight based on how tall you are." 
-              data-bs-content="Remember, muscles weigh too." data-bs-trigger="focus" 
-              tabindex="0"><i class="fa fa-question-circle" aria-hidden="true"></i>
+            <a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+              title="The recommended weight based on how tall you are." data-bs-content="Remember, muscles weigh too."
+              data-bs-trigger="focus" tabindex="0"><i class="fa fa-question-circle" aria-hidden="true"></i>
             </a>
           </div>
 
@@ -110,12 +110,12 @@
 
         </div>
 
-        <div class="col-sm-6 col-lg-3 p-4 pt-5 pb-0 pb-md-4 text-start">
+        <div class="col-sm-6 col-md-3 p-4 pt-5 pb-0 pb-md-4 text-start">
           <h3 class="mb-4">Results</h3>
           <p>Your BMI: <span id="result_bmi"></span></p>
           <p>Normal weight: <span id="normal"></span></p>
           <p>Please do not use the BMI directly to measure fatness or slimness. The body mass index may have increased,
-            for example, physique, due to muscularity or other factors.</p>
+            for example, physique, due to muscularity or other&nbspfactors.</p>
 
           <div class="mt-4 mb-4">
             <button type="button" class="btn btn-dark shadow-none" data-bs-toggle="collapse"
@@ -125,73 +125,74 @@
 
           <div class="collapse" id="collapseExample">
             <div class="card card-body" id="bmi_expl_1">
-              Severly underweight (BMI&nbsp<&nbsp17) 
+              Severly underweight (BMI&nbsp<&nbsp17)
             </div>
             <div class="card card-body" id="bmi_expl_2">
-              Underweight (BMI&nbsp=17&nbsp-&nbsp<&nbsp18.5) 
+              Underweight (BMI&nbsp=17&nbsp-&nbsp<&nbsp18.5)
             </div>
             <div class="card card-body" id="bmi_expl_3">
-              Normal weight (BMI&nbsp=18.5&nbsp-&nbsp<&nbsp25) 
+              Normal weight (BMI&nbsp=18.5&nbsp-&nbsp<&nbsp25)
             </div>
             <div class="card card-body" id="bmi_expl_4">
-              Overweight (BMI&nbsp=25&nbsp-&nbsp<&nbsp30) 
+              Overweight (BMI&nbsp=25&nbsp-&nbsp<&nbsp30)
             </div>
             <div class="card card-body" id="bmi_expl_5">
-              Moderately obese (BMI&nbsp=30&nbsp-&nbsp<&nbsp35) 
-            </div>
+                              Moderately obese (BMI&nbsp=30&nbsp-&nbsp<&nbsp35) </div>
             <div class="card card-body" id="bmi_expl_6">
-              Severely obese (BMI&nbsp=35&nbsp-&nbsp<&nbsp40) 
-            </div>
+                                  Severely obese (BMI&nbsp=35&nbsp-&nbsp<&nbsp40) </div>
             <div class="card card-body" id="bmi_expl_7">
-              Very severely obese (BMI >= 40)
+                                      Very severely obese (BMI >= 40)
             </div>
-          </div>
+            </div>
 
-        </div>
+                            </div>
 
-        <div class="col-sm-6 col-lg-3 p-4 pt-5 pb-0 pb-md-4 text-start">
-          <h2 class="mb-4">Waist control</h2>
+                            <div class="col-sm-6 col-md-3 p-4 pt-5 pb-0 pb-md-4 text-start">
+                              <h2 class="mb-4">Waist control</h2>
 
-          <div class="mb-3">
-            <label for="waist" class="form-label">Waist (cm)</label>
-            <a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Waist diameter"
-              data-bs-content="Measure your waist above your hips." data-bs-trigger="focus" tabindex="0"><i
-                class="fa fa-question-circle" aria-hidden="true"></i></a>
-            <input type="number" class="form-control" id="waist" placeholder="Centimeters, no decimals">
-          </div>
+                              <div class="mb-3">
+                                <label for="waist" class="form-label">Waist (cm)</label>
+                                <a data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+                                  title="Waist diameter" data-bs-content="Measure your waist above your hips."
+                                  data-bs-trigger="focus" tabindex="0"><i class="fa fa-question-circle"
+                                    aria-hidden="true"></i></a>
+                                <input type="number" class="form-control" id="waist"
+                                  placeholder="Centimeters, no decimals">
+                              </div>
 
-          <div class="form-check-inline">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked
-              value="1">
-            <label class="form-check-label" for="flexRadioDefault1">
-              Male
-            </label>
-          </div>
-          <div class="form-check-inline">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="2">
-            <label class="form-check-label" for="flexRadioDefault2">
-              Female
-            </label>
-          </div>
+                              <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault1" checked value="1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Male
+                                </label>
+                              </div>
+                              <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault2" value="2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Female
+                                </label>
+                              </div>
 
-          <div class="mt-4">
-            <button type="button" class="btn btn-dark shadow-none" id="calculate_waist"><i class="fa fa-eye pe-2"
-                aria-hidden="true"></i>Waist</button>
-          </div>
-        </div>
+                              <div class="mt-4">
+                                <button type="button" class="btn btn-dark shadow-none" id="calculate_waist"><i
+                                    class="fa fa-eye pe-2" aria-hidden="true"></i>Waist</button>
+                              </div>
+                            </div>
 
-        <div class="col-sm-6 col-lg-3 p-4 pt-5 text-start">
-          <h3 class="mb-4">Results</h3>
-          <p>Your waist measurement is an indicator of the level of internal fat deposits which coat
-            the heart, kidneys, liver, digestive organs and pancreas. This can increase the risk of
-            heart disease and stroke.</p>
-          <ul class="list-group">
-            <li class="list-group-item" id="lg-item_1">No health risk</li>
-            <li class="list-group-item" id="lg-item_2">Slight health risk</li>
-            <li class="list-group-item" id="lg-item_3">Great health risk</li>
-          </ul>
-        </div>
-      </div>
+                            <div class="col-sm-6 col-md-3 p-4 pt-5 text-start">
+                              <h3 class="mb-4">Results</h3>
+                              <p>Your waist measurement is an indicator of the level of internal fat deposits which coat
+                                the heart, kidneys, liver, digestive organs and pancreas. This can increase the risk of
+                                heart disease&nbspand&nbspstroke.</p>
+                              <ul class="list-group">
+                                <li class="list-group-item" id="lg-item_1">No health risk</li>
+                                <li class="list-group-item" id="lg-item_2">Slight health risk</li>
+                                <li class="list-group-item" id="lg-item_3">Great health risk</li>
+                              </ul>
+                            </div>
+                        </div>
 
     </section>
     <!-- Section ends here -->
@@ -225,13 +226,14 @@
       </div>
     </div>
   </div>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  
+
   <script src="js/mycode.js"></script>
 
 </body>

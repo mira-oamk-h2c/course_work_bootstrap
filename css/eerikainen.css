@@ -124,9 +124,19 @@ footer {
   color: rgba(255, 255, 255, 0.65);
 }
 
+/* Image Gallery */
+
+.images figure {
+  display: inline-block;
+}
+
+#figcap_images {
+  font-weight: 700;
+}
+
 /* Quiz */
 
-.form-check {
+.form-check.quiz {
   width: max-content;
 }
 
@@ -152,11 +162,6 @@ footer {
 
 ::placeholder {
   font-size: 0.85em;
-}
-
-.form-check {
-  display: block;
-  max-width: 212px;
 }
 
 .card-body {
