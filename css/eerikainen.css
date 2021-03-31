@@ -180,16 +180,9 @@ footer {
 
 /* Media querys */
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
   body {
     font-size: 1.15em;
-  }
-
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 1em;
   }
 
 }
