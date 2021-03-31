@@ -7,6 +7,11 @@ html {
   height: 100%; /* this is a must for parallax. */
 }
 
+main {
+  overflow: visible;
+}
+
+
 .parallax {
   position: relative;
   opacity: 1;
@@ -16,14 +21,6 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-main {
-  overflow: visible;
-}
-
-.parallax-container {
-  min-height: auto;
 }
 
 #bgimg-1 {
@@ -86,6 +83,11 @@ for your larger screens and smaller screens. */
   .parallax {
     background-attachment: scroll;
   }
+
+  main {
+    overflow: hidden;
+  }
+
 }
 
 @media screen and (max-width: 812px) {
