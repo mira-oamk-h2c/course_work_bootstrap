@@ -11,7 +11,6 @@ main {
   overflow: visible;
 }
 
-
 .parallax {
   position: relative;
   opacity: 1;
@@ -84,9 +83,9 @@ for your larger screens and smaller screens. */
     background-attachment: scroll;
   }
 
-  main {
+/*   main {
     overflow: hidden;
-  }
+  } */
 
 }
 
