@@ -5,9 +5,7 @@ https://www.w3schools.com/howto/howto_css_parallax.asp
 body,
 html {
   height: 100%; /* this is a must for parallax. */
-
-  /* font-family: Tahoma, Arial, sans-serif; */
-  /* font-size: 100%; */
+  
 }
 
 .parallax {
@@ -20,6 +18,15 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+main {
+  overflow: visible;
+}
+
+.parallax-container {
+  min-height: auto;
+}
+
 
 #bgimg-1 {
   background-image: url('../img/berlin-wall-50727_fix.jpg');
@@ -79,15 +86,12 @@ Increase/decrease the pixels if needed. Test what is the proper value
 for your larger screens and smaller screens. */
 
 @media screen and (max-width: 1024px) {
-
   .parallax {
     background-attachment: scroll;
   }
-
 }
 
 @media screen and (max-width: 768px) {
-
   .caption {
     top: 43%;
   }
@@ -102,7 +106,6 @@ for your larger screens and smaller screens. */
   #bgimg-3 {
     height: 38%;
   }
-
 }
 
 @media screen and (max-width: 640px) {
@@ -119,11 +122,9 @@ for your larger screens and smaller screens. */
   #bgimg-3 {
     height: 23%;
   }
-
 }
 
 @media screen and (max-width: 375px) {
-
   .caption {
     top: 42%;
   }
@@ -138,5 +139,4 @@ for your larger screens and smaller screens. */
   #bgimg-3 {
     height: 10%;
   }
-
 }
