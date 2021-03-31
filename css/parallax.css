@@ -173,10 +173,6 @@ for your larger screens and smaller screens. */
     padding: 0;
   }
 
-  main {
-    overflow-x: auto;
-  }
-
 }
 
 @media screen and (max-width: 375px) {
