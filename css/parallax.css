@@ -83,10 +83,6 @@ for your larger screens and smaller screens. */
     background-attachment: scroll;
   }
 
-  main {
-    overflow-x: hidden;
-  }
-
 }
 
 @media screen and (max-width: 812px) {
@@ -176,6 +172,11 @@ for your larger screens and smaller screens. */
   .parallax-footer {
     padding: 0;
   }
+
+  main {
+    overflow: hidden;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -200,4 +201,5 @@ for your larger screens and smaller screens. */
   #bgimg-3 {
     height: 7.5%;
   }
+
 }
