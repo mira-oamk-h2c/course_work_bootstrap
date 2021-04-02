@@ -111,17 +111,19 @@ $(document).ready(function () {
 
     // Show explanation based on result (bmi)
     if (result < 17) {
-      $("#bmi_expl_1").addClass("bg-info");
+      $("#bmi_expl_1").addClass("bg-danger");
     } else if (result < 18.5) {
-      $("#bmi_expl_2").addClass("bg-info");
+      $("#bmi_expl_2").addClass("bg-warning");
     } else if (result < 25) {
       $("#bmi_expl_3").addClass("bg-info");
     } else if (result < 30) {
-      $("#bmi_expl_4").addClass("bg-info");
+      $("#bmi_expl_4").addClass("bg-warning");
+    } else if (result < 35) {
+      $("#bmi_expl_5").addClass("bg-warning2");
     } else if (result < 40) {
-      $("#bmi_expl_5").addClass("bg-info");
+      $("#bmi_expl_6").addClass("bg-danger");
     } else if (result >= 40) {
-      $("#bmi_expl_7").addClass("bg-info");
+      $("#bmi_expl_7").addClass("bg-danger");
     }
 
   });
@@ -154,6 +156,9 @@ $(document).ready(function () {
     $("#result_bmi").html("");
     $("#normal").html("");
     $(".card-body").removeClass("bg-info");
+    $(".card-body").removeClass("bg-warning");
+    $(".card-body").removeClass("bg-warning2");
+    $(".card-body").removeClass("bg-danger");
     $("#weight_range").prop("checked", false);
   });
 
@@ -184,17 +189,17 @@ $(document).ready(function () {
       if (value < 90) {
         $("#lg-item_1").addClass("bg-info");
       } else if (value <= 100) {
-        $("#lg-item_2").addClass("bg-info");
+        $("#lg-item_2").addClass("bg-warning");
       } else if (value > 100) {
-        $("#lg-item_3").addClass("bg-info");
+        $("#lg-item_3").addClass("bg-danger");
       }
     } else {
       if (value < 80) {
         $("#lg-item_1").addClass("bg-info");
       } else if (value <= 90) {
-        $("#lg-item_2").addClass("bg-info");
+        $("#lg-item_2").addClass("bg-warning");
       } else if (value > 90) {
-        $("#lg-item_3").addClass("bg-info");
+        $("#lg-item_3").addClass("bg-danger");
       }
     }
   });
@@ -203,6 +208,8 @@ $(document).ready(function () {
   $("#waist").focusin(function () {
     $(this).select();
     $(".list-group-item").removeClass("bg-info");
+    $(".list-group-item").removeClass("bg-warning");
+    $(".list-group-item").removeClass("bg-danger");
   });
 
   // Focus on input element with click on radio button
