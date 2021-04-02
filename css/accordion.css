@@ -40,7 +40,7 @@
 .accordion-collapse {
 
   /* Override Bootstrap */
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
   color: #264a5a;
   border: solid rgba(38, 74, 90, 0.15);
 }
