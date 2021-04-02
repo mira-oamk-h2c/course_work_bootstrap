@@ -8,10 +8,6 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
-main {
-  overflow: hidden;
-}
-
 section {
   position: relative;
   min-height: calc(100vh - 248px);
@@ -19,6 +15,7 @@ section {
 }
 
 footer {
+  overflow: hidden;
   background-color: rgba(255, 255, 255, 0.25);
   color: rgba(255, 255, 255, 0.65);
 }
@@ -191,6 +188,10 @@ figcaption {
   font-weight: 600;
 }
 
+#result {
+  font-weight: 700;
+}
+
 /* BMI */
 
 .bg-info {
@@ -198,7 +199,7 @@ figcaption {
 }
 
 .bg-warning {
-  background-color: #f8d94e !important;
+  background-color: #ffdf50 !important;
 }
 
 .bg-warning2 {
@@ -214,6 +215,7 @@ figcaption {
 ::placeholder {
   font-size: 0.85em;
 }
+
 
 /* Media querys */
 
