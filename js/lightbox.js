@@ -27,6 +27,7 @@
         root.lightbox = factory(root.jQuery);
     }
 }(this, function ($) {
+  
 
   function Lightbox(options) {
     this.album = [];

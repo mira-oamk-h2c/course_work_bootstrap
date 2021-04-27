@@ -32,6 +32,7 @@ $(document).ready(function () {
     $("#result").html("Your result: " + total + "/5 correct answers!");
 
   });
+  
 
   // BMI
 
